@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Movie Viewing Survey Form</h1>
+            <p id="description">Thank you for giving your Time</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" class="form-control" required placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="age" class="form-control" min="3" max="120" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fulltimejob">Full Time Job</option>
+                    <option value="not respond">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Gender</p>
+                <label>
+                    <input type="radio" name="gender" value="male" class="input-radio">Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" class="input-radio">Female
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite category of movies?</p>
+                <select name="category" id="favcategory" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="bollywood">Bollywood</option>
+                    <option value="hollywood">Hollywood</option>
+                    <option value="animation">Animation</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    Which movie do you like the most?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input type="checkbox" value="ex machina" name="prefer" class="input-checkbox">Ex Machina
+                </label>
+                <label>
+                    <input type="checkbox" value="in time" name="prefer" class="input-checkbox">In Time
+                </label>
+                <label>
+                    <input type="checkbox" value="blade runner" name="prefer" class="input-checkbox">Blade Runner
+                </label>
+                <label>
+                    <input type="checkbox" value="arrival" name="prefer" class="input-checkbox">Arrival
+                </label>
+                <label>
+                    <input type="checkbox" value="bahubali" name="prefer" class="input-checkbox">Bahubali (Part 1 & 2)
+                </label>
+                <label>
+                    <input type="checkbox" value="3 idiots" name="prefer" class="input-checkbox">3 Idiots
+                </label>
+                <label>
+                    <input type="checkbox" value="avengers endgame" name="prefer" class="input-checkbox">Avengers Endgame
+                </label>
+                <label>
+                    <input type="checkbox" value="wall-e" name="prefer" class="input-checkbox">Wall-E
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+    </form>
+</div>
+</body>
+</html>
